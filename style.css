@@ -115,6 +115,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 }
+
 .menuItem {
     margin-right: 50px;
     cursor: pointer;
@@ -126,4 +127,120 @@ nav a:hover {
 .menuItem:hover {
     color: #1616f6;
     font-size: 1.08em;
+}
+
+.slider {
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);*/
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 500vw;
+}
+
+.sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slideBg {
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.sliderImg {
+    z-index: 1;
+}
+
+.sliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: whitesmoke;
+    z-index: 1;
+}
+
+/* Consolidated and fixed sliderPrice styles */
+.sliderPrice {
+    position: absolute;
+    font-family: "Lato", serif;
+    font-style: italic;
+    padding: 3px;
+    top: 10%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 200;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 1px solid grey;
+}
+
+.buyButton {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    font-size: 25px;
+    font-family: "Lato", serif;
+    color: white;
+    background-color: black;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1;
+}
+
+.buyButton:hover {
+    background-color: whitesmoke;
+    color: black;
+    transform: scale(1.05);
+}
+
+.sliderItem:nth-child(1) .slideBg{
+    background-color: #5e573b;
+}
+
+.sliderItem:nth-child(2) .slideBg{
+    background-color: #111250;
+}
+
+.sliderItem:nth-child(3) .slideBg{
+    background-color: #155008;
+}
+
+.sliderItem:nth-child(4) .slideBg{
+    background-color: #ba8709;
+}
+
+.sliderItem:nth-child(5) .slideBg{
+    background-color: #410345;
+}
+
+.sliderItem:nth-child(1) .sliderPrice{
+    background-color: #5e573b;
+}
+
+.sliderItem:nth-child(2) .sliderPrice{
+    background-color: #111250;
+}
+
+.sliderItem:nth-child(3) .sliderPrice{
+    background-color: #155008;
+}
+
+.sliderItem:nth-child(4) .sliderPrice{
+    background-color: #ba8709;
+}
+
+.sliderItem:nth-child(5) .sliderPrice{
+    background-color: #410345;
 }
