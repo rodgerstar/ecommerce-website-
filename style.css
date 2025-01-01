@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -81,7 +81,7 @@ nav {
     display: flex;
     align-items: center;
     background-color: grey;
-    padding: 10px 20px;
+    padding: 3px 6px;
     border-radius: 10px;
 }
 
@@ -212,70 +212,84 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-.sliderItem:nth-child(1) .slideBg{
+.sliderItem:nth-child(1) .slideBg {
     background-color: #410345;
 }
-.sliderItem:nth-child(2) .slideBg{
+
+.sliderItem:nth-child(2) .slideBg {
     background-color: #111250;
 }
-.sliderItem:nth-child(3) .slideBg{
+
+.sliderItem:nth-child(3) .slideBg {
     background-color: #5e573b;
 }
-.sliderItem:nth-child(4) .slideBg{
+
+.sliderItem:nth-child(4) .slideBg {
     background-color: #ba8709;
 }
-.sliderItem:nth-child(5) .slideBg{
+
+.sliderItem:nth-child(5) .slideBg {
     background-color: #406a2e;
 }
 
-.sliderItem:nth-child(1) .sliderPrice{
+.sliderItem:nth-child(1) .sliderPrice {
     background-color: #410345;
 }
-.sliderItem:nth-child(2) .sliderPrice{
+
+.sliderItem:nth-child(2) .sliderPrice {
     background-color: #111250;
 }
-.sliderItem:nth-child(3) .sliderPrice{
+
+.sliderItem:nth-child(3) .sliderPrice {
     background-color: #5e573b;
 }
-.sliderItem:nth-child(4) .sliderPrice{
+
+.sliderItem:nth-child(4) .sliderPrice {
     background-color: #ba8709;
 }
-.sliderItem:nth-child(5) .sliderPrice{
+
+.sliderItem:nth-child(5) .sliderPrice {
     background-color: #406a2e;
 }
 
-.features{
+.features {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px;
 }
-.feature{
+
+.feature {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.featureIcon{
+
+.featureIcon {
     width: 50px;
     height: 50px;
 }
-.featureTitle{
+
+.featureTitle {
     font-size: 20px;
     font-weight: 600;
     margin: 20px;
 }
-.featureDesc{
+
+.featureDesc {
     color: grey;
     width: 50%;
     height: 100px;
 }
-.product{
+
+.product {
     height: 100vh;
     background-color: #f3eeee;
     position: relative;
     clip-path: polygon(0 11%, 100% 0, 100% 100%, 0% 100%);
 }
+
 .productImage {
     width: 30%; /* Maintains the specified width */
     max-width: 400px; /* Prevents the image from becoming too large */
@@ -285,26 +299,31 @@ nav a:hover {
     margin-top: 8%;
     object-fit: cover; /* Ensures the image fits nicely inside its box */
 }
-.productDetails{
+
+.productDetails {
     position: absolute;
     top: 10%;
     right: 0;
     width: 40%;
     padding: 50px;
 }
-.productTitle{
+
+.productTitle {
     font-size: 60px;
     font-weight: 700;
 }
-.productDesc{
+
+.productDesc {
     font-size: 15px;
     color: grey;
 }
-.colors, .sizes{
+
+.colors, .sizes {
     display: flex;
     margin-bottom: 20px;
 }
-.color{
+
+.color {
     width: 32px;
     height: 32px;
     border-radius: 5px;
@@ -312,6 +331,7 @@ nav a:hover {
     margin-right: 10px;
     cursor: pointer;
 }
+
 .color:nth-child(1) {
     background-color: black;
 }
@@ -331,6 +351,7 @@ nav a:hover {
 .color:nth-child(5) {
     background-color: yellow;
 }
+
 .color:nth-child(6) {
     background-color: rgba(156, 63, 63, 0.61);
 }
@@ -350,14 +371,16 @@ nav a:hover {
 .color:nth-child(10) {
     background-color: #ff6868;
 }
-.size{
+
+.size {
     padding: 5px 20px;
     border: 1px solid black;
     margin-right: 10px;
     cursor: pointer;
     font-size: 20px;
 }
-.productButton{
+
+.productButton {
     float: right;
     padding: 10px 20px;
     background-color: black;
@@ -365,7 +388,117 @@ nav a:hover {
     font-weight: 600;
     cursor: pointer;
 }
-.productButton:hover{
+
+.productButton:hover {
     background-color: white;
     color: black;
+}
+
+.payment {
+    width: 500px;
+    height: 525px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: -13px -2px 15px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -13px -2px 15px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: -13px -2px 15px 1px rgba(0, 0, 0, 0.75);
+}
+.payTitle{
+    font-size: 20px;
+    color: #222222;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+input {
+  border: 1px solid #917007;
+  border-radius: 6px;
+  position: relative;
+  width: 500px;
+  margin: 10px;
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 6ex;
+}
+.payInput::placeholder{
+   color: lightgrey;
+   padding: 5px;
+}
+
+.cardIcons{
+    display: flex;
+}
+.cardIcon{
+    margin-right: 10px;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm{
+    width: 30%;
+}
+
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: -13px -2px 15px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -13px -2px 15px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: -13px -2px 15px 1px rgba(0, 0, 0, 0.75);
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+label {
+  position: absolute;
+  top: -0.1ex;
+  z-index: 1;
+  left: 2em;
+  background-color: white;
+  padding: 0 5px;
+  font-weight: 300;
+  font-size: 15px;
+}
+.gallery{
+    padding: 50px;
+    display: flex;
+}
+.galleryItem{
+    flex: 1;
+}
+.galleryImg{
+    width: 100%;
 }
