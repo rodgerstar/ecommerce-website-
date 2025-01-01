@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Lato", sans-serif;
     font-weight: 700;
@@ -278,6 +282,7 @@ nav a:hover {
     height: auto; /* Ensures aspect ratio is preserved */
     border-radius: 15px; /* Adds rounded corners */
     margin-left: 5%; /* Slight spacing from the left side */
+    margin-top: 8%;
     object-fit: cover; /* Ensures the image fits nicely inside its box */
 }
 .productDetails{
