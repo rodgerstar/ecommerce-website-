@@ -268,12 +268,17 @@ nav a:hover {
 }
 .product{
     height: 100vh;
-    background-color: whitesmoke;
+    background-color: #f3eeee;
     position: relative;
     clip-path: polygon(0 11%, 100% 0, 100% 100%, 0% 100%);
 }
-.productImage{
-    width: 40%;
+.productImage {
+    width: 30%; /* Maintains the specified width */
+    max-width: 400px; /* Prevents the image from becoming too large */
+    height: auto; /* Ensures aspect ratio is preserved */
+    border-radius: 15px; /* Adds rounded corners */
+    margin-left: 5%; /* Slight spacing from the left side */
+    object-fit: cover; /* Ensures the image fits nicely inside its box */
 }
 .productDetails{
     position: absolute;

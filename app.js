@@ -198,23 +198,23 @@ const products = [
     colors: [
       {
         code: "black",
-        img: "img/wedding.png",
+        img: "img/wedding2.png",
       },
       {
         code: "blue",
-        img: "img/bracelet.png",
+        img: "img/wedding2.png",
       },
         {
         code: "red",
-        img: "img/bracelet.png",
+        img: "img/wedding3.png",
       },
         {
         code: "green",
-        img: "img/bracelet.png",
+        img: "img/wedding4.png",
       },
         {
         code: "yellow",
-        img: "img/bracelet.png",
+        img: "img/wedding5.png",
       },
         {
         code: "rgba(156, 63, 63, 0.61)",
