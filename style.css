@@ -81,14 +81,14 @@ nav {
     display: flex;
     align-items: center;
     background-color: grey;
-    padding: 3px 6px;
-    border-radius: 10px;
+    padding: 2px 4px;
+    border-radius: 5px;
 }
 
 .search-input::placeholder {
     color: lightgrey;
     opacity: 1; /* Ensures the placeholder is fully opaque */
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .search-input {
@@ -499,7 +499,37 @@ label {
 .galleryItem{
     flex: 1;
     padding: 50px;
+    border-radius: 10px;
 }
 .galleryImg{
     width: 100%;
+}
+.newSeason {
+  display: flex;
+}
+
+.nsItem {
+  flex: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nsImg {
+  width: 100%;
+  height: 600px;
+}
+
+.nsTitle {
+  font-size: 40px;
+}
+
+.nsButton {
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
 }
