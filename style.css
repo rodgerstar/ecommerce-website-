@@ -498,6 +498,7 @@ label {
 }
 .galleryItem{
     flex: 1;
+    padding: 50px;
 }
 .galleryImg{
     width: 100%;
