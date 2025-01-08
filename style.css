@@ -4,6 +4,12 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 
 body {
     font-family: "Lato", sans-serif;
@@ -398,7 +404,7 @@ nav a:hover {
 
 .payment {
     width: 500px;
-    height: 525px;
+    height: 500px;
     background-color: white;
     position: absolute;
     top: 0;
@@ -426,7 +432,7 @@ input {
   border: 1px solid #917007;
   border-radius: 6px;
   position: relative;
-  width: 500px;
+  width: 400px;
   margin: 10px;
   font-size: 13px;
   font-weight: 100;
@@ -497,6 +503,7 @@ label {
 .gallery{
     padding: 50px;
     display: flex;
+    margin-top: 5px;
 }
 .galleryItem{
     flex: 1;
